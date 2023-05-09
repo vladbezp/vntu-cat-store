@@ -1,0 +1,29 @@
+.cat-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-tags {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.cat-image {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 350px;
+    max-height: 300px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.cat-descriptions {
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
