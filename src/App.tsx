@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useMemo, useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
 import Home from './pages/Home/Home';
@@ -6,6 +6,9 @@ import CatDetailsPage from './pages/Details/CatDetailsPage';
 import ContactPage from './pages/Contact/ContactPage';
 import Navigation from "./components/Navigation/Navigation";
 import {routes} from "./types/routes";
+import {fetchCats} from "./store/cats/catsAPI";
+import {setCats} from "./store/cats/catsSlice";
+import {useDispatch} from "react-redux";
 
 const { Header, Content, Sider } = Layout;
 
@@ -15,6 +18,17 @@ const App: React.FC = () => {
     const toggleNavigation = () => {
         setCollapsed(!collapsed);
     };
+
+    const dispatch = useDispatch();
+
+    useMemo(() => {
+        const fetchCatsAsync = async () => {
+            const catsData = await fetchCats();
+            dispatch(setCats(catsData));
+        };
+
+        fetchCatsAsync();
+    }, [dispatch]);
 
     return (
         <Router>

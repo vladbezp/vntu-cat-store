@@ -43,7 +43,7 @@ const Navigation: React.FC<NavigationProps> = ({ collapsed }) => {
             <Menu.SubMenu key="sub1" title="Котики">
                 {cats.map((cat: Cat) => (
                     <Menu.Item key={`cat-${cat.id}`}>
-                        <Link to={`${routes.CAT_DETAILS.replace(':id', cat.id.toString())}`}>{cat.name}</Link>
+                        <Link to={`${routes.CAT_DETAILS.replace(':catId', cat.id.toString())}`}>{cat.name}</Link>
                     </Menu.Item>
                 ))}
             </Menu.SubMenu>
