@@ -34,7 +34,7 @@ const CatDetail: React.FC<CatDetailProps> = ({ cat }) => {
                 <Descriptions.Item label="Порода">{cat.breed}</Descriptions.Item>
                 <Descriptions.Item label="Опис">{cat.description}</Descriptions.Item>
             </Descriptions>
-            <Link to={`${routes.CAT_DETAILS.replace(':id', cat.id.toString())}`}>Нажміть для більш детальної інформації!</Link>
+            <Link to={`${routes.CAT_DETAILS.replace(':catId', cat.id.toString())}`}>Нажміть для більш детальної інформації!</Link>
         </div>
     );
 };
