@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vntu-cat-store/static/css/main.055afc32.css",
-    "main.js": "/vntu-cat-store/static/js/main.f4016d97.js",
+    "main.js": "/vntu-cat-store/static/js/main.19f64120.js",
     "index.html": "/vntu-cat-store/index.html",
     "main.055afc32.css.map": "/vntu-cat-store/static/css/main.055afc32.css.map",
-    "main.f4016d97.js.map": "/vntu-cat-store/static/js/main.f4016d97.js.map"
+    "main.19f64120.js.map": "/vntu-cat-store/static/js/main.19f64120.js.map"
   },
   "entrypoints": [
     "static/css/main.055afc32.css",
-    "static/js/main.f4016d97.js"
+    "static/js/main.19f64120.js"
   ]
 }
